@@ -1,0 +1,27 @@
+{
+	"error_log": {
+		"prefix": "e",
+		"body": "error_log(${1:logvar});",
+		"description": "simple error_log"
+	},
+	"error_log_var": {
+		"prefix": "ev",
+		"body": "error_log('$${1:logvar}: '. $${1:logvar});",
+		"description": "variable error_log"
+	},
+	"error_log_json_var": {
+		"prefix": "evv",
+		"body": "error_log('${1:logvar}: '. json_encode($${1:logvar}, JSON_PRETTY_PRINT));",
+		"description": "json-encoded variable error_log"
+	},
+	"php_vardump": {
+		"prefix": "pvd",
+		"body": "echo \"<pre>${1:var}: \"; var_dump($${1:var}); echo \"</pre>\";",
+		"description": "php var_dump"
+	},
+	"phpunit_with_args": {
+		"prefix": "wargs",
+		"body": "->withArgs(function () { var_dump(func_get_args()); exit; })",
+		"description": "phpunit withArgs debug"
+	}
+}

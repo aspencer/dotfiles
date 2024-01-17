@@ -1,0 +1,17 @@
+{
+	"console_log": {
+		"prefix": "jlog",
+		"body": "console.log(${1:logvar});",
+		"description": "simple console log"
+	},
+	"console_log_var": {
+		"prefix": "jlogv",
+		"body": "console.log({ ${1:logvar} });",
+		"description": "console log var"
+	},
+	"console_log_var_snapshot": {
+		"prefix": "jlogvv",
+		"body": "console.log('${1:logvar}:', JSON.parse(JSON.stringify(${1:logvar})));",
+		"description": "console log var snapshot"
+	}
+}
