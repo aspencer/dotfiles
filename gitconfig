@@ -3,7 +3,8 @@
     email = aspencer.ignotus@gmail.com
 [core]
     excludesfile = ~/.gitignore
-    editor = vi 
+    hookspath = ~/github/hooks
+    editor = vi
 [color]
     ui = true
     diff = auto
@@ -15,3 +16,8 @@
     br = branch
     co = checkout
     st = status
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+[push]
+    default = simple
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
