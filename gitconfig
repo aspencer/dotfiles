@@ -1,0 +1,17 @@
+[user]
+    name = Tony Spencer
+    email = aspencer.ignotus@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+    editor = vi 
+[color]
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    ci = commit
+    b  = branch
+    br = branch
+    co = checkout
+    st = status
